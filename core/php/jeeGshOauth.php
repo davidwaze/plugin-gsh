@@ -38,6 +38,7 @@ if (init('response_type') == 'code') {
 			} elseif (!login(init('username'), init('password'), init('twoFactorCode'))) {
 				$error = __("Mot de passe ou nom d'utilisateur incorrect", __FILE__);
 			}
+		}
 	}
 
 	// Check if user is an Admin
